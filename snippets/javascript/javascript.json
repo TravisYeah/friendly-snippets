@@ -937,5 +937,23 @@
         "prefix": "setDate",
         "body": ["setDate($1);", "$0"],
         "description": "The setDate() method changes the day of the month of a given Date instance, based on local time."
+    },
+    "test": {
+        "prefix": "test",
+        "body": [
+            "test(\"${1:description}\", async () => {",
+            "\t${0}",
+            "})"
+        ],
+        "description": "Create test"
+    },
+    "description": {
+        "prefix": "describe",
+        "body": [
+            "describe(\"${1:description}\", async () => {",
+            "\t${0}",
+            "})"
+        ],
+        "description": "Create test description block"
     }
 }
