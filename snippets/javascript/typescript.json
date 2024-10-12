@@ -216,5 +216,23 @@
         "prefix": "#endregion",
         "body": ["//#endregion"],
         "description": "Folding Region End"
+    },
+    "Test": {
+        "prefix": "test",
+        "body": [
+            "test(\"${1:description}\", async () => {",
+            "\t${0}",
+            "})"
+        ],
+        "description": "Create test"
+    },
+    "Test Description": {
+        "prefix": "describe",
+        "body": [
+            "describe(\"${1:description}\", async () => {",
+            "\t${0}",
+            "})"
+        ],
+        "description": "Create test description block"
     }
 }
